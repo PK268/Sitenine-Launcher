@@ -1,0 +1,39 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sitenine_Launcher.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <ScrollView>
+        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*"
+              Padding="{OnPlatform iOS='30,60,30,30', Default='0'}">
+
+            <Image
+                Source="launcher_bg_one.png"
+                HorizontalOptions="Center"
+                GridLayout.Row="0"
+                Scale="1"/>
+
+            <Image
+                Source="splash_icon_alt.png"
+                HeightRequest="100"
+                WidthRequest="100"
+                AnchorX="0.05"
+                AnchorY="0.25"
+                Scale="4"/>
+
+            <Button 
+                Text="Click me"
+                HeightRequest="80"
+                WidthRequest="250"
+                TranslationY="375"
+                Scale="1"
+                FontAttributes="Bold"
+                GridLayout.Row="5"
+                BackgroundColor="Black"
+                Clicked="OnCounterClicked"/>
+        </Grid>
+        
+        
+    </ScrollView>
+    
+</ContentPage>

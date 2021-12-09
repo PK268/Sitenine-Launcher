@@ -14,23 +14,40 @@
                 Scale="1"/>
 
             <Image
-                Source="splash_icon_alt.png"
+                Source="splash_icon_hd_outline.png"
                 HeightRequest="100"
                 WidthRequest="100"
-                AnchorX="0.05"
-                AnchorY="0.25"
-                Scale="4"/>
+                AnchorX="0.5"
+                AnchorY="-0.12"
+                HorizontalOptions="Center"
+                GridLayout.Row="0"
+                Scale="5"/>
 
             <Button 
-                Text="Click me"
-                HeightRequest="80"
-                WidthRequest="250"
-                TranslationY="375"
+                Text=""
+                HeightRequest="85"
+                WidthRequest="320"
+                TranslationY="-282"
+                TranslationX="560"
                 Scale="1"
                 FontAttributes="Bold"
-                GridLayout.Row="5"
+                GridLayout.Row="4"
                 BackgroundColor="Black"
-                Clicked="OnCounterClicked"/>
+                Clicked="MainButton_Click"
+                FontSize="30"
+                x:Name="MainButton"/>
+               
+
+            <Label
+                Text="V1.0"
+                x:Name="VersionLabel"
+                TextColor="White"
+                GridLayout.Row="0"
+                FontSize="24"
+                FontAttributes="Bold"
+                TranslationX="10"
+                TranslationY="675"
+                />
         </Grid>
         
         

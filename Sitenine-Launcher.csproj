@@ -55,7 +55,12 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\dotnet_bot.svg" />
 	  <None Remove="Resources\Images\launcher_bg_one.png" />
-	  <None Remove="Resources\Images\splash_icon_alt.png" />
+	  <None Remove="Resources\Images\splash_icon_hd.png" />
+	  <None Remove="Resources\Images\splash_icon_hd_outline.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="ZstdNet" Version="1.4.5" />
 	</ItemGroup>
 
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">

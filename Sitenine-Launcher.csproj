@@ -60,6 +60,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="7z.NET" Version="1.0.3" />
 	  <PackageReference Include="ZstdNet" Version="1.4.5" />
 	</ItemGroup>
 

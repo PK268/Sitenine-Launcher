@@ -7,6 +7,8 @@
         <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*"
               Padding="{OnPlatform iOS='30,60,30,30', Default='0'}">
 
+
+
             <Image
                 Source="launcher_bg_one.png"
                 HorizontalOptions="Center"
@@ -27,16 +29,16 @@
                 Text=""
                 HeightRequest="85"
                 WidthRequest="320"
-                TranslationY="-282"
+                TranslationY="-210"
                 TranslationX="560"
                 Scale="1"
                 FontAttributes="Bold"
-                GridLayout.Row="4"
+                GridLayout.Row="1"
                 BackgroundColor="Black"
                 Clicked="MainButton_Click"
                 FontSize="30"
                 x:Name="MainButton"/>
-               
+
 
             <Label
                 Text="V1.0"
@@ -48,9 +50,20 @@
                 TranslationX="10"
                 TranslationY="675"
                 />
+
+            <Image
+                Source="added_window_bg.png"
+                HorizontalOptions="Center"
+                ScaleX="0.25"
+                ScaleY="0.25"
+                TranslationX="-500"
+                TranslationY="-1400"
+                Opacity="0.9"
+                GridLayout.Row="2"
+                Scale="1"/>
         </Grid>
-        
-        
+
+
     </ScrollView>
-    
+
 </ContentPage>

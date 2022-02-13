@@ -10,7 +10,8 @@
     <AbsoluteLayout>
         <Image
                 Source="launcher_bg_one.png"
-                HorizontalOptions="Fill"
+                HorizontalOptions="Center"
+                AbsoluteLayout.LayoutBounds="10, 0"
                 Scale="1"/>
 
         <Image

@@ -1,6 +1,10 @@
 ﻿using Microsoft.Maui;
+using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Hosting;
 using Microsoft.UI.Xaml;
+
+using System;
+
 using Windows.ApplicationModel;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -20,6 +24,7 @@ namespace Sitenine_Launcher.WinUI
         public App()
         {
             this.InitializeComponent();
+            
         }
 
         protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();

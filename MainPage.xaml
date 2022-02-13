@@ -1,21 +1,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Sitenine_Launcher.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}">
-
-    <ScrollView>
-        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,*"
-              Padding="{OnPlatform iOS='30,60,30,30', Default='0'}">
-
+             BackgroundColor="Transparent"
+             BackgroundImageSource="launcher_bg_one.png"
+             Title="Site 9"
+             IconImageSource="icon256.ico">
 
 
-            <Image
+    <AbsoluteLayout>
+        <Image
                 Source="launcher_bg_one.png"
-                HorizontalOptions="Center"
-                GridLayout.Row="0"
+                HorizontalOptions="Fill"
                 Scale="1"/>
 
-            <Image
+        <Image
                 Source="splash_icon_hd_outline.png"
                 HeightRequest="100"
                 WidthRequest="100"
@@ -25,22 +23,25 @@
                 GridLayout.Row="0"
                 Scale="5"/>
 
-            <Button 
+        <Button 
                 Text=""
                 HeightRequest="85"
                 WidthRequest="320"
-                TranslationY="-210"
-                TranslationX="560"
+                TranslationY="-400"
+                TranslationX="0"
                 Scale="1"
                 FontAttributes="Bold"
-                GridLayout.Row="1"
+                GridLayout.Row="2"
                 BackgroundColor="Black"
                 Clicked="MainButton_Click"
+                HorizontalOptions="Center"
+            VerticalOptions="Center"
                 FontSize="30"
+                IsEnabled="True"
                 x:Name="MainButton"/>
 
 
-            <Label
+        <Label
                 Text="V1.0"
                 x:Name="VersionLabel"
                 TextColor="White"
@@ -48,22 +49,32 @@
                 FontSize="24"
                 FontAttributes="Bold"
                 TranslationX="10"
-                TranslationY="675"
-                />
+                TranslationY="0"/>
 
-            <Image
+        <Image
                 Source="added_window_bg.png"
                 HorizontalOptions="Center"
                 ScaleX="0.25"
                 ScaleY="0.25"
-                TranslationX="-500"
-                TranslationY="-1400"
+                WidthRequest="512"
+                HeightRequest="600"
+                TranslationX="-485"
+                TranslationY="-875"
                 Opacity="0.9"
+                GridLayout.Row="1"
+                Scale="3"/>
+
+        <ScrollView>
+            <Label
+                Text="ergkiuhsefrgijuhwergiouhwerrgoiuhwergoiuhwergoiuhdegoiergijergpoijwergegtroiuphwetrgoihwergoiphewgropihwegrpoihwegrhiopegrw"
+                HorizontalOptions="Center"
+                TranslationX="-375"
+                TranslationY="100"
+                MaximumWidthRequest="340"
                 GridLayout.Row="2"
+                FontSize="20"
                 Scale="1"/>
-        </Grid>
-
-
-    </ScrollView>
+        </ScrollView>
+    </AbsoluteLayout>
 
 </ContentPage>

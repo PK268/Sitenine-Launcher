@@ -29,6 +29,10 @@ namespace Sitenine_Launcher
         {
             InitializeComponent();
 
+
+            
+
+
             /*
             System.Drawing.Icon icon = new(Assembly.GetExecutingAssembly().GetManifestResourceStream("icon256.ico")!);
 

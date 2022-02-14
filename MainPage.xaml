@@ -11,15 +11,14 @@
         <Image
                 Source="launcher_bg_one.png"
                 HorizontalOptions="Center"
-                AbsoluteLayout.LayoutBounds="10, 0"
+                AbsoluteLayout.LayoutBounds="213, -142, 1000, 1000"
                 Scale="1"/>
 
         <Image
                 Source="splash_icon_hd_outline.png"
                 HeightRequest="100"
                 WidthRequest="100"
-                AnchorX="0.5"
-                AnchorY="-0.12"
+                AbsoluteLayout.LayoutBounds="664,300,100,100"
                 HorizontalOptions="Center"
                 GridLayout.Row="0"
                 Scale="5"/>
@@ -28,17 +27,15 @@
                 Text=""
                 HeightRequest="85"
                 WidthRequest="320"
-                TranslationY="-400"
-                TranslationX="0"
-                Scale="1"
+                Scale="1.25"
                 FontAttributes="Bold"
-                GridLayout.Row="2"
                 BackgroundColor="Black"
                 Clicked="MainButton_Click"
                 HorizontalOptions="Center"
-            VerticalOptions="Center"
+                VerticalOptions="Center"
                 FontSize="30"
                 IsEnabled="True"
+                AbsoluteLayout.LayoutBounds="664,600,100,100"
                 x:Name="MainButton"/>
 
 
